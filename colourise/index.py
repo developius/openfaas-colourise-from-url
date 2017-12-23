@@ -20,4 +20,4 @@ def read_head():
 
 if(__name__ == "__main__"):
     st = get_stdin()
-    handler.handle(st)
+    handler.handle(st.strip())

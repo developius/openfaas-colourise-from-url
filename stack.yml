@@ -3,7 +3,7 @@ provider:
   gateway: http://localhost:8080
 
 functions:
-  colorization:
+  colourise:
     lang: Dockerfile
     handler: ./colourise
     image: developius/openfaas-colourise-url
