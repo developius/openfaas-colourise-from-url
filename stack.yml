@@ -1,0 +1,12 @@
+provider:
+  name: faas
+  gateway: http://localhost:8080
+
+functions:
+  colorization:
+    lang: Dockerfile
+    handler: ./colourise
+    image: developius/openfaas-colourise-url
+    environment:
+      read_timeout: 60
+      write_timeout: 60
